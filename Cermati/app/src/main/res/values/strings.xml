@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CermatiTest</string>
+    <string name="label_search_github_users">Search Github users</string>
+    <string name="label_loading">Loading...</string>
+</resources>
