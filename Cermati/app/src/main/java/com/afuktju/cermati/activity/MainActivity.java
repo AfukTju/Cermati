@@ -125,6 +125,8 @@ public class MainActivity extends RetrofitServiceActivity {
 
             @Override
             public void onFailed(ResponseBody responseBody) {//
+                isLoading = false;
+
                 try {
                     ResultDefault result = new Gson().fromJson(responseBody.string(), ResultDefault.class);
                     Toast.makeText(getApplicationContext(), result.message, Toast.LENGTH_SHORT).show();
